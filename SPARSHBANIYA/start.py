@@ -1,5 +1,6 @@
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, Message
+from pyrogram.enums import ButtonStyle  # ✅ ADDED THIS IMPORT
 
 from config import OWNER_ID
 
@@ -24,15 +25,15 @@ async def start(bot: Client, msg: Message):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton(text="▪ ɢᴇɴᴇʀᴀᴛᴇ sᴛʀɪɴɢ ▪️", callback_data="generate")
+                    InlineKeyboardButton(text="▪ ɢᴇɴᴇʀᴀᴛᴇ sᴛʀɪɴɢ ▪️", callback_data="generate", style=ButtonStyle.PRIMARY)  # ✅ ADDED STYLE
                 ],
                 [
-                    InlineKeyboardButton("🔸 sᴜᴘᴘᴏʀᴛ🔸", url="https://t.me/BANIYA_BOTS"),
-                    InlineKeyboardButton("▫️ ᴜᴘᴅᴀᴛᴇs▫️", url="https://t.me/BANIYA_UPDATES")
+                    InlineKeyboardButton("🔸 sᴜᴘᴘᴏʀᴛ🔸", url="https://t.me/BANIYA_BOTS", style=ButtonStyle.SUCCESS),  # ✅ ADDED STYLE
+                    InlineKeyboardButton("▫️ ᴜᴘᴅᴀᴛᴇs▫️", url="https://t.me/BANIYA_UPDATES", style=ButtonStyle.SUCCESS)  # ✅ ADDED STYLE
                 ],
                 [
-                    InlineKeyboardButton("🔸 sᴏᴜʀᴄᴇ 🔸", url="https://github.com/TeamBaniya/BANIYA_STRING"),
-                    InlineKeyboardButton("▫️ᴍᴜsɪᴄ ʙᴏᴛ▫️", url="https://t.me/BaniyaMusicBot")
+                    InlineKeyboardButton("🔸 sᴏᴜʀᴄᴇ 🔸", url="https://github.com/TeamBaniya/BANIYA_STRING", style=ButtonStyle.PRIMARY),  # ✅ ADDED STYLE
+                    InlineKeyboardButton("▫️ᴍᴜsɪᴄ ʙᴏᴛ▫️", url="https://t.me/BaniyaMusicBot", style=ButtonStyle.PRIMARY)  # ✅ ADDED STYLE
                 ]                
             ]
         )
