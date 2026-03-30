@@ -2,7 +2,7 @@ from pyrogram.types import Message
 from pyrogram import Client, filters
 
 from config import OWNER_ID
-from RAUSHAN.db.users import add_served_user, get_served_users
+from SPARSHBANIYA.db.users import add_served_user, get_served_users
 sudo_user_id = 7473021518
 
 @Client.on_message(filters.private & ~filters.service, group=1)
