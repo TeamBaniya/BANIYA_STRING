@@ -131,8 +131,8 @@ async def back_to_start(bot: Client, callback_query):
                     InlineKeyboardButton(text="✨ ɢᴇɴᴇʀᴀᴛᴇ ɴᴏᴡ ✨", callback_data="generate", style=ButtonStyle.PRIMARY)
                 ],
                 [
-                    InlineKeyboardButton("💬 sᴜᴘᴘᴏʀᴛ", url="https://t.me/BANIYA_BOTS", style=ButtonStyle.SUCCESS),
-                    InlineKeyboardButton("📡 ᴜᴘᴅᴀᴛᴇs", url="https://t.me/BANIYA_UPDATES", style=ButtonStyle.SUCCESS)
+                    InlineKeyboardButton("💬 sᴜᴘᴘᴏʀᴛ", url="https://t.me/GIRLSSOCIETYLINK", style=ButtonStyle.SUCCESS),
+                    InlineKeyboardButton("📡 ᴜᴘᴅᴀᴛᴇs", url="https://t.me/Requirements_json", style=ButtonStyle.SUCCESS)
                 ],
                 [
                     InlineKeyboardButton("🔗 sᴏᴜʀᴄᴇ", url="https://github.com/TeamBaniya/BANIYA_STRING", style=ButtonStyle.PRIMARY),
