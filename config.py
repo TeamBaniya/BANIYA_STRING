@@ -7,7 +7,7 @@ API_ID = int(getenv("API_ID", "21803165"))
 API_HASH = getenv("API_HASH", "05e5e695feb30e25bef47484cc006da7")
 
 BOT_TOKEN = getenv("BOT_TOKEN", None)
-OWNER_ID = int(getenv("OWNER_ID", "8628239474"))
+OWNER_ID = int(getenv("OWNER_ID", "8593970102"))
 
 MONGO_DB_URI = getenv("mongodb+srv://sparshshivare2606:sparshs2607@cluster0.cvditmt.mongodb.net/?appName=Cluster0")
-MUST_JOIN = getenv("MUST_JOIN", "SPARSH_TALKS")
+MUST_JOIN = getenv("MUST_JOIN", "FucksTheFeelings")
